@@ -1,0 +1,364 @@
+:root
+{
+    --box-shadow:  0 .5rem 1.5rem rgba(0,0,0.1);
+    --white: #eee;
+    --blue: rgba(76, 100, 240, 0.801);
+    --dark-blue: rgb(15, 15, 250);
+    --white: #fff;
+    --blue-d: rgba(5, 5, 65, 0.925);
+    --outline: .1rem solid rgba(0, 0; 0.1);
+    --border: 2rem solid rgb(35, 32, 47);
+    --light-color: #727a80;
+    --black: #101010;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+
+html
+{
+    font-size: 72.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+body {
+    background :var(--white);
+}
+
+.main-container
+{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    opacity: 1;
+}
+
+/* css code for banner*/
+
+.Test
+{
+    display: flex;
+    justify-content: center;
+    background: url(/image/test.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 17rem;
+    width: 100%;
+    height: 100%;
+}
+
+.Test .content h1
+{
+    color: var(--blue-d);
+    font-size: 32px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 300;
+    text-align: center;
+}
+
+.Test .content
+{
+    text-align: center;
+    border: 0px solid;
+    width: 60rem;
+}
+
+.Test .content h1 span
+{
+    color: var(--blue);
+}
+
+ .content p
+{
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.6;
+    text-transform: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.Test .content p span
+{
+    color: var(--white);
+}
+
+
+.Pollutant
+{
+    background: url(/image/poll.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-left: 46px;
+    padding-right: 46px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Pollutant .Poll-list
+{
+    background: #dee1e3;
+    border-radius: 6px;
+    border: 2px solid rgb(99, 167, 246);
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    padding: 35px 20px;
+    align-items: left;
+    width: 98%;
+    height: 98%;    
+    justify-items: left;
+}
+
+.Pollutant  h2
+{
+    color: rgb(99, 167, 246);
+    font-weight: 400;
+    font: 28px Aeonik, sans-serif;
+    text-decoration: solid;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.Pollutant .Poll-list ul li
+{
+    font: 16px Aeonik, sans-serif;
+    line-height: 1.4;
+    text-align: left;
+    justify-content: left;
+    color: var(--black);
+}
+
+.Pollutant .Poll-list ul span
+{
+    color: var(--light-color);
+}
+
+.Phytochemical
+{
+    background: url(/image/phy.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-left: 46px;
+    padding-right: 46px;
+    width: 100%;
+    height: 100%;
+}
+
+.Phytochemical .phy-list
+{
+    background: #e5ebf0;
+    border-radius: 6px;
+    border: 2px solid #5760b2;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    padding: 35px 20px;
+    align-items: center;
+    width: 98%;
+    height: 98%;    
+    justify-items: center;
+}
+
+.Phytochemical  h2
+{
+    color: #5760b2;
+    font-weight: 400;
+    font: 28px Aeonik, sans-serif;
+    text-decoration: solid;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.Phytochemical .phy-list ul
+{
+    font: 16px Aeonik, sans-serif;
+    margin: 12px;
+    line-height: 1.4;
+    text-align: left;
+    justify-content: left;
+}
+
+.Phytochemical .phy-list ul span
+{
+    color: var(--light-color);
+}
+
+
+.Nutritional
+{
+    background: url(/image/nult.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-left: 46px;
+    padding-right: 46px;
+    width: 100%;
+    height: 100%;
+}
+
+.Nutritional .Nul-list
+{
+    background: #e5ebf0;
+    border-radius: 6px;
+    border: 3px solid #19f7b5;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    padding: 35px 20px;
+    align-items: center;
+    width: 98%;
+    height: 98%;    
+    justify-items: center;
+}
+
+.Nutritional  h2
+{
+    color: #19f7b5;
+    font-weight: 400;
+    font: 28px Aeonik, sans-serif;
+    text-decoration: solid;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.Nutritional .Nul-list ul
+{
+    font: 16px Aeonik, sans-serif;
+    margin: 12px;
+    line-height: 1.4;
+    text-align: left;
+    justify-content: left;
+}
+
+.Nutritional .Nul-list ul span
+{
+    color: var(--light-color);
+}
+
+
+
+
+
+/* footer */
+
+.footer
+{
+    background: var(--white);
+}
+
+.footer .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.9rem;
+}
+
+.footer .box-container .box h3
+{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+
+
+/* footer*/
+
+
+
+
+
+/* media queries */
+@media (max-width: 991px)
+{
+    html
+    {
+        font-size: 62.5%;
+    }
+
+    .header
+    {
+        padding: 2rem;
+    }
+
+    section
+    {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header .search-form
+    {
+        width: 90%;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: rgba(5, 5, 65, 0.925);
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+     
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 56.6%;
+    }
+
+    .heading
+    {
+        font-size: 2.5rem;
+    }  
+    .footer
+    {
+        text-align: center;
+    }   
+}
+
+
+
+
+
+
+
+

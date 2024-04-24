@@ -1,0 +1,620 @@
+:root
+{
+    --box-shadow:  0 .5rem 1.5rem rgba(0,0,0.1);
+    --white: #eee;
+    --blue: rgba(76, 100, 240, 0.801);
+    --dark-blue: rgb(15, 15, 250);
+    --white: #fff;
+    --blue-d: rgba(5, 5, 65, 0.925);
+    --outline: .1rem solid rgba(0, 0; 0.1);
+    --border: 2rem solid rgb(35, 32, 47);
+    --light-color: #727a80;
+    --black: #101010;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+
+html
+{
+    font-size: 72.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+body {
+    background :var(--white);
+}
+
+.main-container
+{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    opacity: 1;
+}
+
+/* css code for banner*/
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--blue-d);
+
+}
+
+.heading span
+{
+    background: var(--blue);
+    color: #eee;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 90% 52%, 100% 98%, 0% 100%, 8% 50%, 0% 0%);
+}
+
+
+.btn
+{
+    border: 1px solid var(--blue-d);
+    margin-top: .8rem;
+    display: inline-block;
+    padding: .6rem .8rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--white);
+    cursor: pointer;
+    background: var(--blue-d);
+}
+
+.btn:hover
+{
+    background: var(--blue);
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    border: 0px solid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4%;
+    background: var(--white);
+}
+
+.header .logo 
+{
+   font-size: 2.6rem; 
+   font-weight: 600;
+   color: #006aa7;
+   font-family: 'Audiowide', cursive;
+   text-transform: capitalize;
+   justify-content: center;
+   align-items: center;
+   margin-left: 6rem;
+}
+
+.header .logo span
+{
+    color: #28fafa;
+}
+
+.header  .logo:hover
+{
+    color: var(--dark-blue);
+    text-decoration: underline;
+    background: transparent;
+}
+
+.header .navbar a
+{
+   font-size: 1.8rem; 
+   margin: 3rem 0;
+   color: var(--white);
+}
+
+.navbar .links li a
+{
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+    margin: 1.5rem;
+    text-decoration: none;
+    height: 100%;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar li a:hover
+{
+    color: var(--blue-d);
+    text-decoration: underline;
+    background: transparent;
+}
+
+.header .navbar .navbar-links .links
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 2px;
+}
+
+.navbar li a:hover
+{
+    color: var(--blue);
+    text-decoration: underline;
+    background: transparent;
+}
+
+.header .icons div
+{
+    border: 1px solid;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--blue);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover
+{
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+#menu-btn
+{
+    display: none;
+}
+
+.header .navbar.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form
+{
+    position: absolute;
+    border: 0px solid;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input
+{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: black;
+    padding: 0 1.5rem;
+}
+
+.header .search-form label
+{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: rgba(5, 5, 65, 0.925);
+    cursor: pointer;
+}
+
+.header .search-form label:hover
+{
+    color: var(--blue);
+}
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    background: url(/image/WhatsApp\ Image\ 2024-02-23\ at\ 06.22.52_d675c00a.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 17rem;
+    width: 100%;
+    height: 100%;
+}
+
+.home .content
+{
+    text-align: center;
+    border: 0px solid;
+    width: 60rem;
+}
+
+.home .content h1
+{
+    color: var(--blue-d);
+    font-size: 40px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 600;
+}
+
+.home .content h1 span
+{
+    color: var(--white);
+}
+
+.home .content p
+{
+    color: var(--black);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    line-height: 1.6;
+    text-transform: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.home .content p span
+{
+    color: var(--white);
+}
+
+.about
+{
+    background: var(--white);
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.about h2
+{
+    color: var(--light-color);
+    font-size: 26px;
+    text-align: center;
+    text-transform: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.about .cont-abt .image
+{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+}
+
+ .container 
+{
+    display: flex;
+    background-color: #fff;
+    flex-wrap: nowrap;
+}
+
+.container .card
+{
+    width: 80%;
+    height: 100%;
+    margin: 2px;
+}
+
+.card-image
+{
+    padding-bottom: 20rem;
+    background: url(/image/pollutant.jpg); 
+    background-position: center;
+    background-size: contain;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card-image1
+{
+    padding-bottom: 20rem;
+    background: url(/image/nutritional\ analysis.png); 
+    background-position: center;
+    background-size: contain;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card-image2
+{
+    padding-bottom: 20rem;
+    background: url(/image/pytochemial\ analysis.png); 
+    background-position: center;
+    background-size: contain;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card h2
+{
+    color: whitesmoke;
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Audiowide', cursive;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.card-image:hover
+{
+    opacity: 2;
+    color: var(--blue-d);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+    text-decoration-color: #28fafa;
+}
+
+.card-image2:hover
+{
+    opacity: 2;
+    color: var(--blue-d);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+    text-decoration-color: #28fafa;
+}
+
+.card-image1:hover
+{
+    opacity: 2;
+    color: var(--blue-d);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+    text-decoration-color: #28fafa;
+}
+
+.btnn
+{
+    border: 1px solid var(--blue-d);
+    margin-top: 7.8rem;
+    display: inline-block;
+    padding: .6rem .8rem;
+    font-size: 12px;
+    border-radius: .7rem;
+    color: var(--white);
+    cursor: pointer;
+    background: var(--blue-d);
+    text-align: center;
+    
+}
+
+.btnn:hover
+{
+    background: var(--blue);
+    color: #fff;
+}
+
+.card h2:hover
+{
+    color: var(--blue-d);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+    text-decoration-color: #28fafa;
+    margin-left: 22px; 
+}
+
+
+/* footer */
+
+.footer
+{
+    background: var(--white);
+}
+
+.footer .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.9rem;
+}
+
+.footer .box-container .box h3
+{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box  i
+{
+    color: var(--black);
+}
+
+.footer .box-container .box .links
+{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p
+{
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i
+{
+    color: var(--black);
+    padding-right: 1rem;
+}
+
+.footer .box-container .box .links:hover i
+{
+    padding-right: 2rem;
+
+}
+
+.footer .box-container .box .share a
+{
+    height: 4rem;
+    width: 4rem;
+    border: 0px solid;
+    line-height: 4rem;
+    border-radius: .6rem;
+    font-size: 2.3rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: rgba(113, 134, 252, 0.801);
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover
+{
+    background: var(--black);
+    color: blue;
+}
+
+ .footer .logo 
+{
+   font-size: 2.6rem; 
+   font-weight: 600;
+   color: #006aa7;
+   font-family: 'Audiowide', cursive;
+   text-transform: capitalize;
+   justify-content: center;
+   align-items: center;
+   margin-left: 3rem;
+}
+
+.footer .logo span
+{
+    color: #28fafa;
+}
+
+.footer  .logo:hover
+{
+    color: var(--dark-blue);
+    text-decoration: underline;
+    background: transparent;
+}
+
+
+/* footer*/
+
+
+
+
+
+/* media queries */
+@media (max-width: 991px)
+{
+    html
+    {
+        font-size: 62.5%;
+    }
+
+    .header
+    {
+        padding: 2rem;
+    }
+
+    section
+    {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header .search-form
+    {
+        width: 90%;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: rgba(5, 5, 65, 0.925);
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+     
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 56.6%;
+    }
+
+    .heading
+    {
+        font-size: 2.5rem;
+    }  
+    .footer
+    {
+        text-align: center;
+    }   
+}
+
+
+
+
+
+
+
+

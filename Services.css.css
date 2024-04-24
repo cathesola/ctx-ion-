@@ -1,0 +1,408 @@
+:root
+{
+    --box-shadow:  0 .5rem 1.5rem rgba(0,0,0.1);
+    --white: #eee;
+    --blue: rgba(76, 100, 240, 0.801);
+    --dark-blue: rgb(15, 15, 250);
+    --white: #fff;
+    --blue-d: rgba(5, 5, 65, 0.925);
+    --outline: .1rem solid rgba(0, 0; 0.1);
+    --border: 2rem solid rgb(35, 32, 47);
+    --light-color: #727a80;
+    --black: #101010;
+    --ctxwhite: #e7e2e2;
+    --box-shadow1:  0 .2rem .5rem rgb(36, 34, 34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+
+html
+{
+    font-size: 72.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+body {
+    background : var(--black);
+}
+
+.main-container
+{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    opacity: 1;
+    background : var(--ctxwhite);
+}
+
+/* css code for banner*/
+
+.service-home
+{
+    display: flex;
+    justify-content: center;
+    background: url(/image/pollutant1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 18rem;
+    padding-bottom: 17rem;
+    width: 100%;
+    height: 100%;
+}
+
+.service-home .content h1
+{
+    color: var(--blue-d);
+    font-size: 32px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 300;
+    text-align: center;
+}
+
+.service-home .content
+{
+    text-align: center;
+    border: 0px solid;
+    width: 60rem;
+}
+
+.service-home .content h1 span
+{
+    color: var(--blue);
+}
+
+.service-home .content p
+{
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.6;
+    text-transform: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    justify-content: center;
+}
+
+.service-home .content p span
+{
+    color: var(--white);
+}
+
+
+.Serv-P
+{
+    background: rgb(99, 167, 246);
+    margin: 0px 0px 80px;
+    padding: 53px 66px;
+    width: 100%;
+    height: 100%;
+    margin-top: 58px;
+}
+
+.Serv-P img
+{
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.Serv-P .poll-img
+{
+    border: 0px solid rgba(0, 36, 243, 0.61);
+    padding: 1rem;
+    background: var(--ctxwhite);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow1);
+    border-radius: 12px;
+}
+
+ .Serv-P .poll-img:hover
+{
+    opacity: 2;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+}
+
+
+
+.Serv-P .box
+{
+    background: #dee1e3;
+    box-shadow: var(--box-shadow1);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 53px 53px 66px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    
+}
+
+.Serv-P h4 
+{
+    font: 56px Aeonik, sans-serif;
+    color: rgba(5, 5, 65, 0.925);
+    font-weight: 700;
+    text-align: center;
+}
+
+.Serv-P p
+{
+    font: 16px Aeonik, sans-serif;
+    margin: 42px;
+    margin-top: 12px;
+    line-height: 1.6;
+    text-align: left;
+    justify-content: right;
+}
+
+.Serv-N
+{
+    background: #9bf8dc;
+    margin: 0px 0px 80px;
+    padding: 53px 66px;
+    width: 100%;
+    height: 100%;
+}
+
+.Serv-N img
+{
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.Serv-N .Nutr-img
+{
+    border: 0px solid rgba(0, 36, 243, 0.61);
+    padding: 1rem;
+    background: rgb(242, 234, 234);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow1);
+    border-radius: 12px;
+}
+
+ .Serv-N .Nutr-img:hover
+{
+    opacity: 2;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+}
+
+.Serv-N .box
+{
+    background: #e5ebf0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 53px 53px 66px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow1);
+    
+}
+
+.Serv-N h4 
+{
+    font: 56px Aeonik, sans-serif;
+    color: rgba(5, 5, 65, 0.925);
+    font-weight: 700;
+    text-align: center;
+}
+
+.Serv-N p
+{
+    font: 16px Aeonik, sans-serif;
+    margin: 42px;
+    margin-top: 12px;
+    line-height: 1.6;
+    text-align: left;
+    justify-content: right;
+}
+
+.Serv-Py
+{
+    background: #5760b2;
+    margin: 0px 0px 80px;
+    padding: 53px 66px;
+    width: 100%;
+    height: 100%;
+    margin-top: 58px;
+}
+
+.Serv-Py img
+{
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.Serv-Py .poly-img
+{
+    border: 0px solid rgba(0, 36, 243, 0.61);
+    padding: 1rem;
+    background: #e5ebf0;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow1);
+    border-radius: 12px;
+}
+
+ .Serv-Py .poly-img:hover
+{
+    opacity: 2;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease-in;
+}
+
+.Serv-Py .box
+{
+    background: #dee1e3;
+    box-shadow: var(--box-shadow1);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 53px 53px 66px;
+    align-items: center;
+    width: 100%;
+    height: 100%;    
+}
+
+.Serv-Py h4 
+{
+    font: 56px Aeonik, sans-serif;
+    color: rgba(5, 5, 65, 0.925);
+    font-weight: 700;
+    text-align: center;
+}
+
+.Serv-Py p
+{
+    font: 16px Aeonik, sans-serif;
+    margin: 42px;
+    margin-top: 12px;
+    line-height: 1.6;
+    text-align: left;
+    justify-content: right;
+}
+
+
+
+
+
+/* footer */
+
+.footer
+{
+    background: var(--white);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+/* footer*/
+
+
+
+
+
+/* media queries */
+@media (max-width: 991px)
+{
+    html
+    {
+        font-size: 62.5%;
+    }
+
+    .header
+    {
+        padding: 2rem;
+    }
+
+    section
+    {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    #menu-btn
+    {
+        display: inline-block;
+    }
+
+    .header .search-form
+    {
+        width: 90%;
+    }
+
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: rgba(5, 5, 65, 0.925);
+    }
+
+    .header .navbar a
+    {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+     
+}
+
+@media (max-width: 450px)
+{
+    html
+    {
+        font-size: 56.6%;
+    }
+
+    .heading
+    {
+        font-size: 2.5rem;
+    }  
+    .footer
+    {
+        text-align: center;
+    }   
+}
+
+
+
+
+
+
+
+
